@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI GIERKI</title>
+    <script src="skrypt.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>MINI GIERKI</h1>
+    <div class="przerwa"></div>
+    <h2>KÓŁKO I KRZYŻYK</h2>
+    <div class="przerwa"></div>
+    <br><br><br>
+    <b>Gracz:<br><br> <input type="button" value="GRACZ 1" id="bn1" onclick="gracz1()"> &nbsp;&nbsp;&nbsp;<input type="button" id="bn2" value="GRACZ 2"  onclick="gracz2()"></b>
+    <br><br><br>
+    
+    <table>
+      <div id="gr">Kolej Gracza: </div>  <tr>
+            <td id="1" onclick="poka1()" ></td>
+            <td id="2" onclick="poka2()"></td>
+            <td id="3" onclick="poka3()"></td>
+        </tr>
+        <tr>
+            <td id="4" onclick="poka4()"></td>
+            <td id="5" onclick="poka5()"></td>
+            <td id="6" onclick="poka6()"></td>
+        </tr>
+        <tr>
+            <td id="7" onclick="poka7()"></td>
+            <td id="8" onclick="poka8()"></td>
+            <td id="9" onclick="poka9()"></td>
+        </tr>
+    </table><br>
+    <input type="button"  onclick="zresetujto()" value="RESTART">
+    <br><br><br> 
+    <div class="przerwa"></div>
+    <h2>ZGADNIJ LICZBĘ OD 1-100</h2>
+    <div class="przerwa"></div>
+    <br><br><br>Podaj Liczbę:
+    <input type="number" id="litery" onFocus="this.value='';">
+    <input type="button" value="Pokaż"  onclick="stworz()">
+    <br><br>Zgadłes:<div id="zgd">0</div><br>Próba:<div id="prb">1</div>
+    <br><br> Poprzednie udane:<br><br><br>
+<div id="his"></div>
+<br>
+<div id="hiss"></div>
+<br><br>
+    <div class="przerwa"></div>
+    <h2>ZAPROJEKTUJ FIATA 126p</h2>
+    <div class="przerwa"></div>
+    <br>
+    <form>
+        <div class="tert">Kolor Samochodu:</div>
+        <select id="kolor" name="kolor" onclick="uu()">
+            <option value="zielony">Zielony</option>
+            <option value="bialy">Biały</option>
+            <option value="niebieski">Niebieski</option>
+            <option value="czerwony">Czerwony</option>
+        </select><div id="koll"></div>
+        
+        <br> <br>
+        
+       <div class="tert">Wybierz silnik:</div>
+        <input type="radio" id="silnik1" name="silnik" value="06">
+        Standardowy 0.6L 23KM<br>
+        <input type="radio" id="silnik2" name="silnik" value="V8">
+        V8 350KM<br><br>
+
+
+        <div class="tert">Opcje dodatkowe:</div>
+        <input type="checkbox" id="nitro" name="wyposazenie" value="nitro">
+       Nitro<br>
+        <input type="checkbox" id="gaz" name="wyposazenie" value="gaz">
+       LPG<br><br>
+
+        <div class="tert">Wybierz rodzaj ubezpieczenia: </div><br>
+        <select id="ubezpieczenie" name="ubezpieczenie">
+            <option value="podstawowe">Podstawowe</option>
+            <option value="komfortowe">Komfortowe</option>
+            <option value="pełne">Pełne</option>
+        </select><br><br>
+
+        <input type="button" value="Wygeneruj samochód" onclick="auto()">
+        <br><br>
+        <div id="genob" widh="70%" height="00px"></div>
+        <br><br>
+    </form>
+    <br><br>
+    <div class="przerwa"></div>
+    <h2>Test liczby pierwszej</h2>
+    <div class="przerwa"></div>
+    <br><br>
+    Liczba pierwsza - to taka liczba naturalna, która ma dokładnie dwa dzielniki naturalne: jedynkę i samą siebie. 
+    <br><br>
+    Podaj liczbe:
+    <input type="number" id="pierwszaa" onClick="this.value=''">
+    <br><br>
+    <input type="button" value="sprawdz" onclick="pierwsza()">
+    <br><br>
+
+    <footer>
+        <small><i>Copyright &copy; </i></small>
+    </footer>
+</body>
+</html>
